@@ -9,8 +9,8 @@ function fibonacci(n) {
     fibonacci(30)
     return performance.now() - start;
  }
- 
- const outside = measure()
+measure() 
+const outside = measure()
 
 export default async function handler(req, res) {
     const inside = measure()
