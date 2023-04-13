@@ -6,7 +6,7 @@ function fibonacci(n) {
  
  function measure() {
     const start = performance.now();
-    fibonacci(30)
+    fibonacci(40)
     return performance.now() - start;
  }
 measure() 
