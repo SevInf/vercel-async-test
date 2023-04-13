@@ -2,6 +2,6 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 await delay(3000)
 
-export const handler = async(req, res) => {
-    res.send({ hello })
+export default async function handler(req, res) {
+    res.status(200).send({ hello: 'world' })
 };
